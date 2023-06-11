@@ -85,8 +85,7 @@ const uint32_t Chash::hash_seed = 12;
 int
 main(void)
 {
-    std::initializer_list<std::string> test = {"a", "b", "c"};
-    Chash myhash(test);
+    Chash myhash({"a", "b", "c"});
     std::cout << myhash.findNode("asdf.mp4") << " ";
     std::cout << myhash.findNode("wbxpage.html") << " ";
     std::cout << myhash.findNode("default.html") << " ";
