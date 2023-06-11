@@ -69,7 +69,6 @@ Chash::addNode(const std::initializer_list<std::string> & nodes){
             std::string virtual_node = node + prefix + std::to_string(i);
             MurmurHash3_x86_128(&virtual_node[0], virtual_node.length(), hash_seed, &out);
             virtual_map[out] = virtual_node;
-            virtual_map[out] = virtual_node;
         }
     }  
 }
